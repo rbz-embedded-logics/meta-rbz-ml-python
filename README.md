@@ -31,7 +31,8 @@ Si no se añade a `bblayers.conf`, `rbz-image-ml` queda igual que en `meta-rbz`.
 
        sudo apt install gfortran
 
-3. `bblayers.conf`:
+3. Con el manifest `imx-6.18.20-2.0.0-rbz-ml-python.xml`, `rbz-setup-release.sh` añade los puntos 3 y 4
+   automáticamente si existen `sources/meta-python-ai` y `sources/meta-rbz-ml-python`. A mano, `bblayers.conf`:
 
        BBLAYERS += "${BSPDIR}/sources/meta-python-ai"
        BBLAYERS += "${BSPDIR}/sources/meta-rbz-ml-python"
